@@ -5,7 +5,7 @@ Vagrant.configure("2") do |config|
   config.vm.network "private_network", ip: "192.168.162.162"
   config.ssh.forward_agent = true
   config.ssh.forward_x11 = true
-  config.vm.hostname = "development.cs162.eecs.berkeley.edu"
+  config.vm.hostname = "development.g.1337.school"
 
   config.vm.synced_folder "~/", "/vagrant"
 

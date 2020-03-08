@@ -1,4 +1,4 @@
-class cs162::samba {
+class g1337::samba {
 
     package { "samba":
         ensure => installed;
@@ -6,7 +6,7 @@ class cs162::samba {
 
     file { "/etc/samba/smb.conf":
         ensure  => file,
-        content => template("cs162/samba/smb.conf"),
+        content => template("g1337/samba/smb.conf"),
         require => Package[samba];
     }
 

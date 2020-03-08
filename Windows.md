@@ -1,4 +1,4 @@
-Running the CS 162 Vagrant VM on Windows
+Running the G1337 Vagrant VM on Windows
 ========================================
 
 There are some challenges to running Vagrant on Windows. This file is meant to provide assistance to Windows users.
@@ -36,19 +36,19 @@ Vagrant is a tool for provisioning development environments. You can download Va
 
 At this point, you should **restart your computer**, for the greatest chance of success.
 
-### 4. Set up the CS 162 VM
+### 4. Set up the G1337 VM
 
 We will now use Cygwin Terminal to set up our virtual machine.
 
 1. Open up the Cygwin Terminal.
-1. Run `mkdir cs162-vm`
-1. Run `cd cs162-vm`
-1. Run `vagrant init cs162/<current-semester>`
+1. Run `mkdir g1337-vm`
+1. Run `cd g1337-vm`
+1. Run `vagrant init g1337/<current-semester>`
 1. Run `vagrant up`. This step may take a while, and requires a fast internet connection.
 1. Run `vagrant ssh`. You should now be in an SSH session connected to the virtual machine. You can type `logout` to log out.
 
 ### 5. Closing notes
 
-You need to run all vagrant commands from the `cs162-vm` directory you created earlier. Do NOT delete that directory, or vagrant will not know how to manage the VM you created.
+You need to run all vagrant commands from the `g1337-vm` directory you created earlier. Do NOT delete that directory, or vagrant will not know how to manage the VM you created.
 
 You can run `vagrant halt` to stop the virtual machine. If this command does not work, make sure you are running it from your host machine, not inside SSH. To start the virtual machine the next time, you only need to run `vagrant up` and `vagrant ssh`. All of the other steps (installing Cygwin and running vagrant init) do not need to be repeated.

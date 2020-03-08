@@ -1,4 +1,4 @@
-class cs162::bochs($home_directory, $owner, $group) {
+class g1337::bochs($home_directory, $owner, $group) {
 
     $install_script = "$home_directory/.bochs.install.sh"
     $install_directory = "$home_directory/bochs/"
@@ -10,7 +10,7 @@ class cs162::bochs($home_directory, $owner, $group) {
         owner   => $owner,
         group   => $group,
         mode    => "0755",
-        content => template("cs162/bochs/install.sh"),
+        content => template("g1337/bochs/install.sh"),
     }
     ->
     exec { "install bochs from source":

@@ -113,4 +113,4 @@ if ! shopt -oq posix; then
   fi
 fi
 
-. ~/.cs162.bashrc
+. ~/.g1337.bashrc

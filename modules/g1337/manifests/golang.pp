@@ -1,4 +1,4 @@
-class cs162::golang($home_directory, $owner, $group) {
+class g1337::golang($home_directory, $owner, $group) {
 
     $install_script = "$home_directory/.golang.install.sh"
 
@@ -9,7 +9,7 @@ class cs162::golang($home_directory, $owner, $group) {
         owner   => $owner,
         group   => $group,
         mode    => "0755",
-        content => template("cs162/golang/install.sh"),
+        content => template("g1337/golang/install.sh"),
     }
     ->
     exec { "install golang":

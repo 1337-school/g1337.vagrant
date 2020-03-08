@@ -1,4 +1,4 @@
-Vagrant VM for CS162
+Vagrant VM for G1337
 ====================
 
 ### Running on Vagrant
@@ -35,7 +35,7 @@ to install git first, so:
 
 ```shell
 $ apt-get install git
-$ git clone --recursive https://github.com/Berkeley-CS162/vagrant.git
+$ git clone --recursive https://github.com/1337-school/g1337.vagrant.git
 ```
 
 #### 3. Add the vagrant user (even if you aren't using vagrant)
