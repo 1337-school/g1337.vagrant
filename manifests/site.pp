@@ -83,27 +83,27 @@ node default {
             owner  => vagrant,
             group  => vagrant;
     }
-    ->
-    vcsrepo {
-        "$home/code/group":
-            ensure => present,
-            source => "https://github.com/Berkeley-CS162/group0.git",
-            remote => staff;
-        "$home/code/personal":
-            ensure => present,
-            source => "https://github.com/Berkeley-CS162/student0.git",
-            remote => staff;
-    }
+    #->
+    #vcsrepo {
+    #    "$home/code/group":
+    #        ensure => present,
+    #        source => "https://github.com/Berkeley-CS162/group0.git",
+    #        remote => staff;
+    #    "$home/code/personal":
+    #        ensure => present,
+    #        source => "https://github.com/Berkeley-CS162/student0.git",
+    #        remote => staff;
+    #}
 
     # Set up some project support stuff
 
-    class { ["cs162::bochs", "cs162::golang", "cs162::shell"]:
+    class { ["g1337::bochs", "g1337::golang", "g1337::shell"]:
         home_directory => $home,
         owner          => vagrant,
         group          => vagrant,
     }
 
-    include cs162::samba
+    include g1337::samba
 
     file {
         "/usr/bin/qemu":
